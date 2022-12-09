@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid gold;
+}
+
+.navbar h4,
+a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a {
+  margin-right: 50px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.main-section img {
+  border-radius: 50px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 25px;
+  margin-top: 60px;
+  
+}
+
+.skills,
+.projects,
+.Blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  gap: 30px;
+  border: 2px solid gold;
+  padding: 20px;
+}
+
+.skills:hover,.projects:hover,
+.Blogs:hover {
+    background-color: rgb(28, 28, 28);
+    border: 2px dotted gold;;
+}
+
+.btn1 {
+  height: 35px;
+  width: 150px;
+  background-color: gold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.btn2 {
+  height: 35px;
+  width: 150px;
+  border: 1px solid gold;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  background-color: black;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid gold;
+  margin-top: 100px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* projects */
+
+.project-heading h1{
+text-align: center;
+margin-top: 50px;
+font-size: 40px;
+}
+
+.project-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+}
