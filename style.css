@@ -29,15 +29,17 @@ a {
   text-decoration: none;
 }
 
+
 .navbar a {
   margin-right: 50px;
 }
 
-.main {
+.main-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .main-section img {
@@ -52,7 +54,6 @@ a {
   gap: 50px;
   font-size: 25px;
   margin-top: 60px;
-  
 }
 
 .skills,
@@ -69,10 +70,11 @@ a {
   padding: 20px;
 }
 
-.skills:hover,.projects:hover,
+.skills:hover,
+.projects:hover,
 .Blogs:hover {
-    background-color: rgb(28, 28, 28);
-    border: 2px dotted gold;;
+  background-color: rgb(28, 28, 28);
+  border: 2px dotted gold;
 }
 
 .btn1 {
@@ -119,36 +121,73 @@ a {
   justify-content: space-between;
 }
 
-
 /* projects */
 
-.project-heading h1{
-text-align: center;
-margin-top: 50px;
-font-size: 40px;
+.project-heading h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
 }
 
-.project-btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 32%;
+.project-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 32%;
 }
 
-.center{
-    width: 70%;
-    margin: auto;
-   display: flex;
-   flex-direction: column;
-   gap: 50px;
-   margin-top: 50px;
-   font-size: 22px;
+.center {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  font-size: 22px;
 }
 
 .code {
-    background-color: lightgray;
-    padding: 1rem 1rem;
-    padding-left: 2rem;
-    list-style: none;
-    color: black;
+  background-color: lightgray;
+  padding: 1rem 1rem;
+  padding-left: 2rem;
+  list-style: none;
+  color: black;
+}
+
+@media only screen and (max-width: 425px) {
+  .main-section {
+    margin-top: 15px;
+  }
+  .main-section img {
+    width: 300px;
+  }
+  .main-section h1 {
+    text-align: center;
+  }
+  .navbar {
+    width: 100%;
+ justify-content: space-around;
+  }
+
+   .navbar h4 {
+    margin-left: 15px;
+  }
+
+  .navbar a {
+    margin-right: 10px;
+  } 
+
+  .navbar h4,
+  a {
+    font-size: 15px;
+  }
+
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    width: 80%;
+  }
 }
