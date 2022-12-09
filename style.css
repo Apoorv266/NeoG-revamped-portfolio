@@ -134,3 +134,21 @@ font-size: 40px;
     justify-content: space-between;
     width: 32%;
 }
+
+.center{
+    width: 70%;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   margin-top: 50px;
+   font-size: 22px;
+}
+
+.code {
+    background-color: lightgray;
+    padding: 1rem 1rem;
+    padding-left: 2rem;
+    list-style: none;
+    color: black;
+}
