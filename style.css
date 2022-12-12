@@ -19,7 +19,7 @@ body {
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid gold;
+  border-bottom: 2px solid gold;
 }
 
 .navbar h4,
