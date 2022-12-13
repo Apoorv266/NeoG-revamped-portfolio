@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoorv's Portfolio Website</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <div class="nav-left">
+            <h4>Apoorv Sharma</h4>
+        </div>
+        <div class="nav-right">
+            <a href="/index.html">Home</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/blogs.html">Blogs</a>
+        </div>
+    </navbar>
+
+    <section class="project-heading">
+        <h1>How does browser handles javacript ?</h1>
+    </section>
+
+    <section class="center">
+
+
+        <p>Javascript works in client side that means it runs inside browser.What is that one thing that allows javascript to work inside browser ? The answer is <u>Javascript engine.</u></p>
+
+        <h2>Little history about javascript engine :-</h2>
+        <p>The first developers of javascript is netscape.They were also the developer of javascript engine as well.Now netscape is converted to mozilla and now the engine is recognised as <u>spider monkey.</u>Spider monkey engine is to render javascript in mozilla firefox.</p>
+        <p>Similarly, the javasript engine for chrome is <u>V8 engine</u>.For microsoft edge, the javascript engine is known as <u>chakra</u>Though these javascript engines have different names, they all render javascript and work in similar pattern.</p>
+
+        <p>Here is a list of javascript engines for different browsers.</p>
+        <p class="code">API stands for <b>Application Programming Interface.</b></p>
+
+        <h2>How does these javascript engine work?</h2>
+
+        <p>We use a script tag while writing a javascript code.With the help of this script tag, the javascript code is fetched.The javsacript code can be fetched primarily from 3 resources.These are <u>network, cache and service worker.</u></p>
+
+        <p>Network --> Javascript code is stored in a server where the website is uploaded.When the user access a website, the javasript code is fetched from network.When the user visits a website for the first time , then network is used.</p>
+
+        <p>Cache --> When a user visits a website multiple times, the javascript code gets store in cache memory in user's computer.When the user visits the website again , javasript is fetched from cache.</p>
+
+        <h2>What happens after javasript is fethed?</h2>
+        <p>One the javasript code is fethed from either network or cache, it gets downloaded is form of bytes.</p>
+
+        <p>This binary data gets decoded with the help of <u>byte stream decoder</u>The byte stream decoder decodes byte into <u>tokens.</u>The tokens are sent to <u>parser.</u></p>
+
+        <h2>What are the types of parsers?</h2>
+
+        <p> There are basically 2 types of parsers in any type of javascript engine.</p>
+
+        <p>1) Pre-parser --> It parses all the unecessary code that is not needed immideately for execution.</p>
+
+        <p>2) Parser --> It parses all the useful code that is needed immideately for execution.This significantly improves the rendering time and this makes javascript super fast.</p>
+
+        <h2>What are the types of parsers?</h2>
+
+
+
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <h2>connect with me on socials</h2>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/apoorv.js/" target="_blank">Twitter</a>
+            <a href="https://twitter.com/ApoorvJs" target="_blank">Instagram</a>
+            <a href="https://github.com/Apoorv266" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/apoorv-sharma-803998248/" target="_blank">Linkdin</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
