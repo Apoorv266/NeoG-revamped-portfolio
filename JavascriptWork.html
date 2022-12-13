@@ -35,34 +35,41 @@
         <p>Similarly, the javascript engine for chrome is a <u>V8 engine</u> . For Microsoft edge, the javascript engine is known as <u>chakra</u> .Though these javascript engines have different names, they all render javascript and work in a similar pattern.</p>
 
         <p>Here is a list of javascript engines for different browsers.</p>
-        <p class="code">API stands for <b>Application Programming Interface.</b></p>
+        <div class="code">
+            <ul>
+                <li>Charka - internet explorer</li>
+                <li>Tamarin - adobe flash</li>
+                <li>Hermes - for mobile apps</li>
+                <li>JavaScriptCore - Safari</li>
+            </ul>
+        </div>
 
-        <h2>How does these javascript engines work?</h2>
+        <h2>How do these javascript engines work?</h2>
 
-        <p>We use a script tag while writing a javascript code.With the help of this script tag, the javascript code is fetched.The javsacript code can be fetched primarily from 3 resources.These are <u>network, cache and service worker.</u></p>
+        <p>We use a script tag while writing a javascript code. With the help of this script tag, the javascript code is fetched. The javascript code can be fetched primarily from 3 resources. These are <u>network, cache, and service worker.</u></p>
 
-        <p>Network --> Javascript code is stored in a server where the website is uploaded.When the user access a website, the javasript code is fetched from network.When the user visits a website for the first time , then network is used.</p>
+        <p>Network --> Javascript code is stored in a server where the website is uploaded. When the user accesses a website, the javascript code is fetched from the network. When the user visits a website for the first time, then a network is used.</p>
 
-        <p>Cache --> When a user visits a website multiple times, the javascript code gets store in cache memory in user's computer.When the user visits the website again , javasript is fetched from cache.</p>
+        <p>Cache -->When a user visits a website multiple times, the javascript code gets stored in cache memory in the user's computer. When the user visits the website again, javascript is fetched from the cache.</p>
 
-        <h2>What happens after javasript is fethed?</h2>
-        <p>One the javasript code is fethed from either network or cache, it gets downloaded is form of bytes.</p>
+        <h2>What happens after JavaScript is fetched?</h2>
+        <p>Once the javascript code is fetched from either network or cache, it gets downloaded in the form of bytes.</p>
 
-        <p>This binary data gets decoded with the help of <u>byte stream decoder</u>The byte stream decoder decodes byte into <u>tokens.</u>The tokens are sent to <u>parser.</u></p>
+        <p>This binary data gets decoded with the help of a <u>byte stream decoder.</u> The byte stream decoder decodes bytes into tokens. The tokens are sent to the <u>parser.</u></p>
 
         <h2>What are the types of parsers?</h2>
 
         <p> There are basically 2 types of parsers in any type of javascript engine.</p>
 
-        <p>1) Pre-parser --> It parses all the unecessary code that is not needed immideately for execution.</p>
+        <p>1) Pre-parser --> It parses all the unnecessary code that is not needed immediately for execution.</p>
 
-        <p>2) Parser --> It parses all the useful code that is needed immideately for execution.This significantly improves the rendering time and this makes javascript super fast.</p>
+        <p>2) Parser --> parses all the useful code that is needed immediately for execution. This significantly improves the rendering time and this makes javascript super fast.</p>
 
         <h2>What happens after parsing?</h2>
 
-<p>A node is created as the parsing happens based upon the tokens that has been passed to the parser by byte stream decoder.A node looks like a tree like structure similar to DOM tree.This tree is known as <u>abstract syntax tree or AST.</u></p>
+<p>A node is created as the parsing happens based on the tokens that have been passed to the parser by the byte stream decoder. A node looks like a tree-like structure similar to a DOM tree. This tree is known as an <u>abstract syntax tree or AST.</u></p>
 
-<p>The <u>interpreter</u> walks through the AST and generates byte code.This byte code is send to <u>optimizing compailer</u>which generates highly optimized machine code with is finally userstood by our browsers.</p>
+<p>The <u>interpreter</u> walks through the AST and generates the byte code. This byte code is sent to the <u>optimizing compiler</u>which generates highly optimized machine code with is finally understood by our browsers.</p>
 
     </section>
     <footer class="footer">
