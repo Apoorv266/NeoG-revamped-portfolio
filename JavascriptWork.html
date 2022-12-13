@@ -58,9 +58,11 @@
 
         <p>2) Parser --> It parses all the useful code that is needed immideately for execution.This significantly improves the rendering time and this makes javascript super fast.</p>
 
-        <h2>What are the types of parsers?</h2>
+        <h2>What happens after parsing?</h2>
 
+<p>A node is created as the parsing happens based upon the tokens that has been passed to the parser by byte stream decoder.A node looks like a tree like structure similar to DOM tree.This tree is known as <u>abstract syntax tree or AST.</u></p>
 
+<p>The <u>interpreter</u> walks through the AST and generates byte code.This byte code is send to <u>optimizing compailer</u>which generates highly optimized machine code with is finally userstood by our browsers.</p>
 
     </section>
     <footer class="footer">
